@@ -22,6 +22,9 @@ end
 
 def printer(attendees)
   result = batch_badge_creator(attendees)
-  result.concat(assign_rooms(attendees))
-  result.each do {|el| puts el}
+  array = assign_rooms(attendees)
+  array.each do |el|
+    result << el
+  end
+  result
 end
