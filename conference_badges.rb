@@ -26,5 +26,5 @@ def printer(attendees)
   array.each do |el|
     result << el
   end
-  result
+  puts result
 end
